@@ -7,7 +7,7 @@ const generateHTML = pokemons => pokemons.reduce((accumulator, pokemon) => {
     const types = pokemon.types.map(typeInfo => typeInfo.type.name);
         accumulator += `
             <li class="card ${types[0]}">
-            <img class="card-image " alt="${pokemon.name}" src="https://pokeres.bastionbot.org/imagens/pokemon/${pokemon.id}.png"/>
+            <img class="card-image " alt="${pokemon.name}" src="./assets/img/${pokemon.id}.png"/>
             <h2 class="card-title">${pokemon.id}.${pokemon.name}</h2>
             <p class="card-subtitle">${types.join(' | ')}</p>
             </li>`
